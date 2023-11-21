@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./project.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/icon.ico" type="image/x-icon" />
+    <title>Games & Fun</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="logo">
+                <img src="./img/Group 2.png" alt="#" class="logo-img">
+                <div class="logo-text-container">
+                    <p class="logo-title">Coding</p>
+                    <span class="logo-text">Magic</span>
+                </div>
+            </div>
+            <nav class="navigation">
+                <select class="navigation-select" id="">
+                    <option value="hide" class="hide-select">Інтерактив</option>
+                    <option value="numeric" class="option-select">Числовий</option>
+                    <option value="game" class="option-select">Ігровий</option>
+                    <option value="introductory" class="option-select">Ознайомчий</option>
+                </select>
+                <a href="#slider" class="navigation-link middle">Наша команда</a>
+                <a href="#ftr" class="navigation-link">Контакти</a>
+            </nav>
+            <div class="header-registration">
+                <button class="them-btn">
+                    <img src="./img/Group 71.png" alt="" class="them-img">
+                </button>
+                <p class="headr-name-user">Вітаємо, User!</p>
+            </div>
+        </header>
+        <div class="modal">
+            <div class="modal-content">
+                <span class="modal-text">Привіт!
+                    Ви потрапили на сайт інтерактивних ігор та завдань
+                    Надіємось, що вам сподобається і ви отримаєте позитивні емоції!
+                    Бажаємо Вам гарно провести час!
+                </span>
+                <div class="modal-registration">
+                    <p class="modal-title">Введіть своє ім’я:</p>
+                    <input type="text" class="modal-inpt" placeholder="Ваше ім’я...">
+                    <button class="modal-btn">Зберегти</button> 
+                </div>
+            </div>
+            <div class="modal-images">
+                <img src="./img/game-development 1.png" alt="#" class="modal-img game-icon">
+                <img src="./img/puzzle 1.png" alt="#" class="modal-img puzzle">
+                <img src="img/sword 1.png" alt="#" class="modal-img sword">
+                <img src="./img/tic-tac-toe 1.png" alt="#" class="modal-img tic-tac">
+            </div>
+            <button class="modal-close">
+                <img src="./img/Vector 234.png" alt="" class="close-icon">
+            </button>
+        </div>
+        <main>
+            <p class="title-popular-game">Популярні інетрактивні ігри</p>
+            <form action="" class="leapYear" id="leapYearForm">
+                <label for="leapYearInput" style="font-size: 25px">Перевір рік, в якому ти народився</label>
+                <div class="inpContent">
+                  <input
+                    type="text"
+                    id="leapYearInput"
+                    class="leapCheckInput"
+                    placeholder="Рік народження"
+                  />
+                  <button class="checkLeapBtn">?</button>
+                  <label for="" class="leapDateMessage"></label>
+                </div>
+            </form>
+            <div class="line"></div>
+            <form action="" class="guessNum" id="guessNumForm">
+                <label for="guessNumInput" style="font-size: 25px">Вгадай число</label>
+                <div class="inpContent">
+                  <input
+                    type="text"
+                    id="guessNumInput"
+                    class="guessNumInput"
+                    placeholder="Введіть число (1-100)"
+                  />
+                  <button class="guessNumBtn">?</button>
+                  <label for="" class="guessNumMessage"></label>
+                </div>
+              </form>
+            <div class="line"></div>
+            <div class="calculate">
+                <div class="contain-calculate">
+                    <h1 class="calculate-title">Камінь - Ножиці - Папір</h1>
+                    <button class="btn stone"><img src="./img/stone 1.png" alt=""></button>
+                    <button class="btn scissors"><img src="./img/scissors 1.png" alt=""></button>
+                    <button class="btn paper"><img src="./img/paper 1.png" alt=""></button>
+                    <div class="result-calculate">
+                        <p class="result-game">Гра ще не почалася</p>
+                        <p class="result-text">Варіант комп'ютера</p>
+                    </div>
+                </div>
+                <div class="сounter-calculate">
+                    <p class="result">Рахунок:</p>
+                    <p >Комп'ютер - <span class="computer-score">0</span></p>
+                    <p>Ви - <span class="player-score">0</span></p>
+                </div>
+            </div>
+            <div class="line"></div>
+            <form action="" class="calculator" id="calculatorForm">
+                <label for="calculatorInputA" style="font-size: 25px">Калькулятор</label>
+                <div class="calculatorContent">
+                  <input
+                    type="text"
+                    id="calculatorInputA"
+                    class="calculatorInputA"
+                    placeholder="A"
+                  />
+                  <div class="calculatorOperators">
+                    <button class="calculatorAdd">+</button>
+                    <button class="calculatorSub">-</button>
+                    <button class="calculatorDiv">/</button>
+                    <button class="calculatorMult">*</button>
+                  </div>
+                  <input
+                    type="text"
+                    id="calculatorInputB"
+                    class="calculatorInputB"
+                    placeholder="B"
+                  />
+                  <button class="calculatorEqual">=</button>
+                  <label for="" class="calculatorOutput">?</label>
+                </div>
+              </form>
+            <div class="line"></div>
+            <div class="calculate-time">
+                <div class="time-content">
+                    <p class="calculate-time-title">Калькулятор часу</p>
+                    <div class="calculate-time-content">
+                        <div class="time-inptBtn">
+                            <input type="text" class="time-inpt" placeholder="Введіть число">
+                            <button class="time-btn"><img class="time-img" src="./img/Group 104.png" alt=""></button>
+                        </div>
+                        <p class="time-account-to">............................</p>
+                        <p class="time-account-after">3 дн. 15:45:01</p>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="google-dino">
+                <div class="google-dino-content">
+                    <p class="dino-title">Google динозавр</p>
+                    <img src="./img/Google dino.png" alt="" class="dino-img">
+                </div>
+            </div>
+            <div class="line"></div>
+            <form action="" class="football">
+                <label for="" style="font-size: 25px">Футбол</label>
+                <div class="footballField">
+                  <img src="./img/ball.png" alt="Football Ball" class="footballBall" />
+                </div>
+              </form>
+            <div class="line"></div>
+            <div id="game-three-numbers" class="game-three-numbers">
+                <div class="contain-three-numbers">
+                    <p class="title-three-numbers">Введіть 3 числа</p>
+                    <div class="inpts-three-numbers">
+                        <input class="inpt-three-numbers" placeholder="Введіть число" type="number"></input>
+                        <input class="inpt-three-numbers" placeholder="Введіть число" type="number"></input>
+                        <input class="inpt-three-numbers" placeholder="Введіть число" type="number"></input>
+                    </div>
+                    <span class="max-number">Найбільше число, яке ви ввели - (число)</span>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div id="slider" class="slider">
+                <div class="container-slider">
+                    <p class="title-slider">Наша команда</p>
+                    <div class="itc-slider" data-slider="itc-slider" data-loop="false" data-autoplay="false">
+                        <div class="itc-slider_wrapper">
+                          <div class="itc-slider_items">
+                                <div class="itc-slider_item">
+                                    <div class="img-slider"></div>
+                                    <p class="name-slader">Вадим</p>
+                                    <span class="information-slider">Інформація про роботу, яку він/вона виконав/ла</span>
+                                </div>
+                                <div class="itc-slider_item hide">
+                                    <div class="img-slider"></div>
+                                    <p class="name-slader">Богдан</p>
+                                    <span class="information-slider">Інформація про роботу, яку він/вона виконав/ла</span>
+                                </div>
+                          </div>
+                        </div>
+                        <button class="itc-slider_btn itc-slider_btn_prev">
+                            <img src="./img/Vector 231.png" alt="">
+                        </button>
+                        <button class="itc-slider_btn itc-slider_btn_next">
+                            <img src="./img/Vector 230.png" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <form action="" class="scientists" id="scientistsForm">
+                <label for="scientists" style="font-size: 25px">Важливі вчені</label>
+                <table class="scientistsTable">
+                  <tr>
+                    <th class="scientistTableSquare"></th>
+                    <th class="scientistTableSquare"></th>
+                    <th class="scientistTableSquare"></th>
+                    <th class="scientistTableSquare"></th>
+                  </tr>
+                  <tr>
+                    <th class="scientistTableSquare"></th>
+                    <th class="scientistTableSquare"></th>
+                    <th class="scientistTableSquare"></th>
+                    <th class="scientistTableSquare"></th>
+                  </tr>
+                  <tr>
+                    <th class="scientistTableSquare"></th>
+                    <th class="scientistTableSquare"></th>
+                    <th class="scientistTableSquare"></th>
+                    <th class="scientistTableSquare"></th>
+                  </tr>
+                  <tr>
+                    <th class="scientistTableSquare"></th>
+                    <th class="scientistTableSquare"></th>
+                    <th class="scientistTableSquare"></th>
+                    <th class="scientistTableSquare"></th>
+                  </tr>
+                </table>
+                
+                <table class="filteringButtons">
+                  <tr>
+                    <th><button id="filter" class="filterXIX">Народилися в ХІХ ст.</button></th>
+                    <th><button id="filter" class="filterAZSort">Сортувати A-Z</button></th>
+                  </tr>
+                  <tr>
+                    <th><button id="filter"class="filterLifeTimeSort">Сортувати за прожитми роками</button></th>
+                    <th><button id="filter"class="filterLastestBirth">Народився найпізніше</button></th>
+                  </tr>
+                  <tr>
+                    <th><button id="filter"class="filterScientistBirth">______ ______ народився у...</button></th>
+                    <th><button id="filter"class="filterSurnameC">Знайти фамілії на "С"</button></th>
+                  </tr>
+                  <tr>
+                    <th><button id="filter"class="filterNameA">Видалити імена на "А"</button></th>
+                    <th><button id="filter"class="filterLifeLongestShortest">Хто прожив найдовше/найменше</button></th>
+                  </tr>
+                </table>
+              </form>
+            <div class="line"></div>
+        </main>
+        <div class="ftr-modal">
+            <div class="ftr-modal-contant">
+                <h1 class="ftr-modal-title">Дякую за підписку!</h1>
+            </div>
+            <div class="ftr-modal-imgs">
+                <img src="./img/sword 1.png" alt="" class="ftr-modal-img sword-img">
+                <img src="./img/puzzle 1.png" alt="" class="ftr-modal-img puzzle-img">
+                <img src="./img/game-development 1.png" alt="" class="ftr-modal-img game-img">
+                <img src="./img/tic-tac-toe 1.png" alt="" class="ftr-modal-img tic-tac-img">
+            </div>
+            <button class="ftr-modal-close">
+                <img src="./img/Vector 234.png" alt="" class="ftr-modal-clsoe-img">
+            </button>
+        </div>
+        <footer id="ftr" class="ftr">
+            <div class="ftr-contain">
+                <div class="ftr-logo">
+                    <img src="./img/Group 2.png" alt="#" class=ftr-img">
+                    <div class="ftr-text-container">
+                        <p class="ftr-title">Coding</p>
+                        <span class="ftr-text">Magic</span>
+                    </div>
+                </div>
+                <div class="ftr-information">
+                    <spam class="information-text">Тел: +38 (123) 456 78 90</spam>
+                    <spam class="information-text email">E-Mail: codingmagic@gmail.com</spam>
+                    <spam class="information-text">Facebook: CodingMagic</spam>
+                    <spam class="information-text twitter">Twitter: CodingMagic</spam>
+                    <spam class="information-text">Instagram: CodingMagic</spam>
+                </div>
+                <div class="ftr-sub">
+                    <input type="text" class="sub-inpt" placeholder="Ваша ел. адреса...">
+                    <button class="sub-btn">Підписатися</button>
+                    <span class="sub-text">*Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+    
+    <script src="./project.js"></script>
+</body>
+</html>
+
+
